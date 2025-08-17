@@ -1,4 +1,4 @@
-# Add "Open with VS Code" to Windows Context Menu
+# 📌 Add "Open with VS Code" to Windows Context Menu
 
 This guide will help you add "Open with VS Code" option in the right-click menu for both directories and empty background space inside folders.
 
@@ -13,8 +13,7 @@ A new Notepad window will open.
 ## Step 2: Copy the Registry Code
 Paste the following into Notepad:
 
-Windows Registry Editor Version 5.00
-
+```bash
 [HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
 @="Open with VS Code"
 "Icon"="\"C:\\Users\\<YourUserName>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\""
@@ -28,7 +27,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\vscode\command]
 @="\"C:\\Users\\<YourUserName>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
-
+```
 ------------------------------------------------------------
 
 ## Step 3: Replace <YourUserName>
@@ -42,7 +41,7 @@ Example output:
 msi
 
 So the path will become:
-C:\Users\msi\AppData\Local\Programs\Microsoft VS Code\Code.exe
+C:\Users\abcd\AppData\Local\Programs\Microsoft VS Code\Code.exe
 
 ------------------------------------------------------------
 
