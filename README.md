@@ -1,4 +1,4 @@
-# 📌 Add "Open with VS Code" to Windows Context Menu
+## 📌 Add "Open with VS Code" to Windows Context Menu
 
 This guide will help you add "Open with VS Code" option in the right-click menu for both directories and empty background space inside folders.
 
